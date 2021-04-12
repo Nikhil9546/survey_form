@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cloud Form</title>
+</head>
+<body>
+  
+  <h3>Firebase Contact Form</h3>
+
+  <div>
+    <form>
+      <label for="Name">First Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+  
+      <label for="Email">Email</label>
+      <input type="text" id="email" name="mail" placeholder="Your Email">  
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="india">India</option>
+        <option value="canada">UK</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Message</label>
+      <input type="text" id="message" name="sub" >
+    
+      <button type="submit" id="submit" >Submit</button>
+    </form>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
